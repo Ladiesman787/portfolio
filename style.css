@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #f4f4f9;
     color: #333;
+    scroll-behavior: smooth; /* Smooth scrolling */
 }
 header {
     background-color: #6200ea;
@@ -19,6 +20,10 @@ nav a {
     margin: 0 15px;
     text-decoration: none;
     color: #6200ea;
+    transition: color 0.3s; /* Transition for hover effect */
+}
+nav a:hover {
+    color: #3700b3; /* Hover effect */
 }
 main {
     max-width: 800px;
@@ -33,4 +38,13 @@ footer {
     padding: 10px;
     background-color: #6200ea;
     color: white;
+}
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+    main {
+        padding: 10px;
+    }
 }
